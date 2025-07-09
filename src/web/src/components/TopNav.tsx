@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
@@ -7,9 +7,8 @@ import ThemeModeToggler from './ThemeModeToggler';
 
 interface Props {
   colorInvert?: boolean;
-  themeToggler: () => void;
 }
-const TopNav = ({ colorInvert = false, themeToggler }: Props): JSX.Element => {
+const TopNav = ({ colorInvert = false }: Props): React.ReactElement => {
   return (
     <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
       <Box marginRight={{ xs: 1, sm: 2 }}>
@@ -58,7 +57,7 @@ const TopNav = ({ colorInvert = false, themeToggler }: Props): JSX.Element => {
         >
         </Link>
       <Box>
-        <ThemeModeToggler themeToggler={themeToggler} />
+        <ThemeModeToggler />
       </Box>
       </Box>
     </Box>

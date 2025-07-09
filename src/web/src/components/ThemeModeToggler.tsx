@@ -1,13 +1,10 @@
-import React, { JSX } from 'react';
+import React from 'react';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 
-interface ThemeModeTogglerProps {
-  themeToggler: () => void;
-}
-
-const ThemeModeToggler = ({ themeToggler }: ThemeModeTogglerProps): React.ReactElement => {
+const ThemeModeToggler = (): React.ReactElement => {
   const theme = useTheme();
+  const { themeToggler } = theme;
   const { mode } = theme.palette;
 
   return (
