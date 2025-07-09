@@ -20,7 +20,7 @@ const TopNav = ({ colorInvert = false, themeToggler }: Props): JSX.Element => {
           color={colorInvert ? 'common.white' : 'text.primary'}
           sx={{ display: 'flex', alignItems: 'center' }}
         >
-          Get Alerts
+          {config.phone}
           <Box
             padding={0.5}
             display={'inline-flex'}
@@ -32,7 +32,7 @@ const TopNav = ({ colorInvert = false, themeToggler }: Props): JSX.Element => {
               variant={'caption'}
               sx={{ color: 'common.white', lineHeight: 1 }}
             >
-              new
+              Get Alerts!
             </Typography>
           </Box>
         </Link>
@@ -56,7 +56,6 @@ const TopNav = ({ colorInvert = false, themeToggler }: Props): JSX.Element => {
           target={'blank'}
           color={colorInvert ? 'common.white' : 'text.primary'}
         >
-          {config.phone}
         </Link>
       <Box>
         <ThemeModeToggler themeToggler={themeToggler} />
