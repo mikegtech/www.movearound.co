@@ -24,7 +24,7 @@ const Topbar = ({
   onSidebarOpen,
   pages,
   colorInvert = false,
-}: Props): JSX.Element => {
+}: Props): React.ReactElement => {
   const theme = useTheme();
   const { mode } = theme.palette;
   const {
@@ -47,18 +47,15 @@ const Topbar = ({
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
+        title="MoveAround.co"
         width={{ xs: 100, md: 120 }}
       >
         <Box
           component={'img'}
-          src={
-            mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
+          src="/logo.png"
           height={1}
           width={1}
+          alt="MoveAround.co Logo"
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>

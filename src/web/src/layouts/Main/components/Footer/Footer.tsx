@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
-const Footer = (): JSX.Element => {
+const Footer = (): React.ReactElement => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
@@ -24,18 +24,15 @@ const Footer = (): JSX.Element => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
-            width={80}
+            title="MoveAround.co"
+            width={100}
           >
             <Box
               component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
+              src="/logo.png"
               height={1}
               width={1}
+              alt="MoveAround.co Logo"
             />
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>

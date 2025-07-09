@@ -25,7 +25,7 @@ const Fluid = ({
   children,
   colorInvert = false,
   bgcolor = 'alternate.main',
-}: Props): JSX.Element => {
+}: Props): React.ReactElement => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
@@ -73,18 +73,15 @@ const Fluid = ({
               display={'flex'}
               component="a"
               href="/"
-              title="theFront"
-              width={{ xs: 100, md: 120 }}
+              title="MoveAround.co"
+              width={{ xs: 120, md: 140 }}
             >
               <Box
                 component={'img'}
-                src={
-                  mode === 'light' && !colorInvert
-                    ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                    : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-                }
+                src="/logo.png"
                 height={1}
                 width={1}
+                alt="MoveAround.co Logo"
               />
             </Box>
             <Button
