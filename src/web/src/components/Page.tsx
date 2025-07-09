@@ -1,4 +1,4 @@
-import React, { useState, useEffect, JSX } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -41,7 +41,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-export default function Page({ children }: Props): JSX.Element {
+export default function Page({ children }: Props): React.ReactElement {
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');

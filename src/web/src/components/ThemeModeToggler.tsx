@@ -6,7 +6,7 @@ interface ThemeModeTogglerProps {
   themeToggler: () => void;
 }
 
-const ThemeModeToggler = ({ themeToggler }: ThemeModeTogglerProps): JSX.Element => {
+const ThemeModeToggler = ({ themeToggler }: ThemeModeTogglerProps): React.ReactElement => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
