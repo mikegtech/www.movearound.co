@@ -1,0 +1,11 @@
+{
+    "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    },
+    "phone": "469.916.0531",
+    "email": "info@movearound.com"
+
+}
