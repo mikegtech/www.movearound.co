@@ -25,7 +25,7 @@ services:
 
   app:
     build:
-      context: .
+      context: src/web
       dockerfile: Dockerfile
     image: movearound-app:latest
     container_name: movearound-app
