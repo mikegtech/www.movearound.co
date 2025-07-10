@@ -1,122 +1,89 @@
 const pages = {
   landings: [
     {
-      title: 'Mobile App',
-      href: '/mobile-app',
+      title: 'Search All Listings',
+      href: '/listings',
+    },
+    { divider: true }, // Add divider here
+    {
+      title: 'New Construction Homes',
+      href: '/listings',
     },
     {
-      title: 'Desktop App',
-      href: '/desktop-app',
+      title: 'Home On Acreage',
+      href: '/listings',
     },
     {
-      title: 'Startup',
-      href: '/startup',
+      title: 'Search By Map',
+      href: '/map_listings',
     },
     {
-      title: 'Expo',
-      href: '/expo',
+      title: 'Condos & Townhomes',
+      href: '/listings',
     },
     {
-      title: 'Marketing',
-      href: '/',
+      title: 'Luxury Homes',
+      href: '/listings',
     },
     {
-      title: 'Service',
-      href: '/service',
+      title: 'Waterfront Homes',
+      href: '/listings',
     },
     {
-      title: 'Enterprise',
-      href: '/enterprise',
-    },
-    {
-      title: 'Cloud Hosting',
-      href: '/cloud-hosting',
-    },
-    {
-      title: 'Design Company',
-      href: '/design-company',
-    },
-    {
-      title: 'Web Basic',
-      href: '/web-basic',
-    },
-    {
-      title: 'Overview',
-      href: '/home',
-    },
-    {
-      title: 'Agency',
-      href: '/agency',
-    },
-    {
-      title: 'E-Learning',
-      href: '/e-learning',
-    },
-    {
-      title: 'Coworking',
-      href: '/coworking',
-    },
-    {
-      title: 'Rental',
-      href: '/rental',
-    },
-    {
-      title: 'Job Listing',
-      href: '/job-listing',
-    },
-    {
-      title: 'Logistics',
-      href: '/logistics',
-    },
-    {
-      title: 'E-commerce',
-      href: '/e-commerce',
+      title: 'Apartments & Rentals',
+      href: '/listings',
     },
   ],
   company: [
     {
-      title: 'Career Lising',
-      href: '/career-listing',
+      title: 'DFW Communities',
+      href: '/communities',
+    },
+    { divider: true }, // Add divider here
+    {
+      title: 'Rockwall',
+      href: '/communities',
     },
     {
-      title: 'Job Opening',
-      href: '/career-opening',
+      title: 'Dallas',
+      href: '/communities',
     },
     {
-      title: 'Customer Stories',
-      href: '/customers',
+      title: 'Garland',
+      href: '/communities',
+    },
+    
+    {
+      title: 'Irving',
+      href: '/communities',
     },
     {
-      title: 'Hire Us',
-      href: '/hire-us',
+      title: 'Las Colinas',
+      href: '/communities',
     },
     {
-      title: 'About: Startup',
-      href: '/about-side-cover',
+      title: 'Southlake',
+      href: '/communities',
     },
     {
-      title: 'About',
-      href: '/about',
+      title: 'Fort Worth',
+      href: '/communities',
     },
     {
-      title: 'Pricing',
-      href: '/pricing',
+      title: 'Frisco',
+      href: '/communities',
     },
     {
-      title: 'Terms',
-      href: '/company-terms',
+      title: 'Keller',
+      href: '/communities',
     },
     {
-      title: 'Contact: Map',
-      href: '/contact-sidebar-map',
+      title: 'Plano',
+      href: '/communities',
     },
     {
-      title: 'Contact: Minimal',
-      href: '/contact-page-cover',
-    },
-    {
-      title: 'Contact: Startup',
-      href: '/contact-page',
+      title: 'Richardson',
+      href: '/communities',
     },
   ],
   account: [
@@ -163,31 +130,55 @@ const pages = {
   ],
   secondary: [
     {
-      title: 'Help Center: Overview',
-      href: '/help-center',
+      title: 'Buyer\'s Guide',
+      href: '/buyer-guide',
     },
     {
-      title: 'Help Center: Article',
-      href: '/help-center-article',
+      title: 'Mortgage Calculator',
+      href: '/buyer-calculator',
     },
     {
-      title: 'FAQ',
-      href: '/faq',
-    },
-    {
-      title: 'Error 404: Simple',
-      href: '/not-found',
-    },
-    {
-      title: 'Error 404: Cover',
-      href: '/not-found-cover',
-    },
-    {
-      title: 'Career Page Minimal',
-      href: '/career-listing-minimal',
+      title: 'Architecture Styles',
+      href: '/buyer-architecture',
     },
   ],
   blog: [
+    {
+      title: 'Selling Options',
+      href: '/seller-options',
+    },
+    {
+      title: 'Marketing Plan',
+      href: '/seller-marketing-plan',
+    }
+  ],
+  portfolio: [
+    {
+      title: 'Military Relocation',
+      href: '/more-info-military',
+    },
+    {
+      title: 'Testimonials',
+      href: '/more-testimonials',
+    },
+    {
+      title: 'Schools',
+      href: '/more-info-schools',
+    },
+    {
+      title: 'Blog',
+      href: '/more-info-blog',
+    },
+  ],
+  addons: [
+    {
+      title: 'Newsroom',
+      href: '/blog-newsroom',
+    },
+    {
+      title: 'Article',
+      href: '/blog-article',
+    },
     {
       title: 'Reach View',
       href: '/blog-reach-view',
@@ -204,25 +195,19 @@ const pages = {
       title: 'Article',
       href: '/blog-article',
     },
-  ],
-  portfolio: [
     {
-      title: 'Grid View',
-      href: '/portfolio-grid',
+      title: 'Error 404: Simple',
+      href: '/not-found',
     },
     {
-      title: 'Masonry',
-      href: '/portfolio-masonry',
+      title: 'Error 404: Cover',
+      href: '/not-found-cover',
     },
     {
-      title: 'Basic',
-      href: '/portfolio-page',
+      title: 'Career Page Minimal',
+      href: '/career-listing-minimal',
     },
-    {
-      title: 'Parallax',
-      href: '/agency',
-    },
-  ],
+  ]
 };
 
 export default pages;

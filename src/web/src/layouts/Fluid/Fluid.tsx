@@ -11,7 +11,7 @@ import Zoom from '@mui/material/Zoom';
 import NoSsr from '@mui/material/NoSsr';
 
 import Container from 'components/Container';
-import TopNav from 'components/TopNav';
+// import TopNav from 'components/TopNav';
 
 import { Footer } from './components';
 
@@ -55,14 +55,14 @@ const Fluid = ({
         }}
         elevation={0}
       >
-        <Container
+        {/* <Container
           maxWidth={1500}
           paddingTop={'8px !important'}
           paddingBottom={'0 !important'}
         >
           <TopNav colorInvert={colorInvert} />
-        </Container>
-        <Container paddingY={1} maxWidth={1500}>
+        </Container> */}
+        <Container maxWidth={1500}>
           <Box
             display={'flex'}
             justifyContent={'space-between'}

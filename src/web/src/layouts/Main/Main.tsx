@@ -7,7 +7,7 @@ import AppBar from '@mui/material/AppBar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 import Container from 'components/Container';
-import TopNav from 'components/TopNav';
+// import TopNav from 'components/TopNav';
 
 import { Topbar, Sidebar, Footer } from './components';
 
@@ -23,7 +23,7 @@ const Main = ({
   children,
   colorInvert = false,
   bgcolor = 'transparent',
-}: Props): JSX.Element => {
+}: Props): React.ReactElement => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -48,10 +48,17 @@ const Main = ({
 
   return (
     <Box>
-      <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
-        <Container paddingTop={'8px !important'} paddingBottom={'0 !important'}>
+      <Box
+        bgcolor={bgcolor}
+        position={'absolute'}
+        top={0}
+        left={0}
+        right={0}
+        zIndex={theme.zIndex.appBar + 1}
+      >
+        {/* <Container paddingTop={'4px !important'} paddingBottom={'0 !important'}>
           <TopNav colorInvert={colorInvert} />
-        </Container>
+        </Container> */}
       </Box>
       <AppBar
         position={'sticky'}
@@ -61,7 +68,7 @@ const Main = ({
         }}
         elevation={trigger ? 1 : 0}
       >
-        <Container paddingY={1}>
+        <Container paddingY={0}>
           <Topbar
             onSidebarOpen={handleSidebarOpen}
             pages={pages}
