@@ -1,7 +1,7 @@
 # Dockerfile
 
 # 1) Build stage
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Copy lockfile & manifest, install deps via yarn
@@ -13,7 +13,7 @@ COPY . .
 RUN yarn build
 
 # 2) Run stage
-FROM node:18-alpine AS runner
+FROM node:20-alpine AS runner
 WORKDIR /app
 
 # Install a lightweight static server
