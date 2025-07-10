@@ -12,7 +12,7 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
       - "--certificatesResolvers.le.acme.tlsChallenge=true"
-      - "--certificatesResolvers.le.acme.email=info@mikegtech.com"
+      - "--certificatesResolvers.le.acme.email=info@movearound.co"
       - "--certificatesResolvers.le.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"
