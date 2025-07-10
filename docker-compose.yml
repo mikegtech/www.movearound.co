@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    restart: unless-stopped
+    command:
+      - "--api.dashboard=true"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedByDefault=false"
+      - "--certificatesResolvers.le.acme.tlsChallenge=true"
+      - "--certificatesResolvers.le.acme.email=info@mikegtech.com"
+      - "--certificatesResolvers.le.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./letsencrypt:/letsencrypt
+    networks:
+      - web
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: movearound-app:latest
+    container_name: movearound-app
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.movearound.rule=Host(`dallas.movearound.co`)"
+      - "traefik.http.routers.movearound.entrypoints=websecure"
+      - "traefik.http.routers.movearound.tls.certresolver=le"
+      - "traefik.http.services.movearound.loadbalancer.server.port=4173"
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge
