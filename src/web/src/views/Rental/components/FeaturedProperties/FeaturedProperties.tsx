@@ -15,49 +15,49 @@ const mock = [
     media: 'https://assets.maccarianagency.com/backgrounds/img27.jpg',
     title: 'Cozy apartament',
     time: '2:00 PM - 5:00 PM',
-    price: '$320.000',
-    size: '2.400',
-    location: 'Via E. Gola 4, 20147 Milan, Italy',
+    price: '$320,000',
+    size: '2,400',
+    location: 'Plano, TX',
   },
   {
     media: 'https://assets.maccarianagency.com/backgrounds/img28.jpg',
     title: 'Villa with the pool',
     time: '11:30 AM - 1:00 AM',
-    price: '$450.000',
-    size: '2.800',
-    location: 'Via Venini 33, 20150 Milan Italy',
+    price: '$450,000',
+    size: '2,800',
+    location: 'Frisco, TX',
   },
   {
     media: 'https://assets.maccarianagency.com/backgrounds/img29.jpg',
     title: 'Open space with garden',
     time: '6:15 PM - 8:00 PM',
-    price: '$280.000',
-    size: '1.400',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
+    price: '$280,000',
+    size: '1,400',
+    location: 'Arlington, TX',
   },
   {
     media: 'https://assets.maccarianagency.com/backgrounds/img30.jpg',
     title: 'Fully renovated',
     time: '6:15 PM - 8:00 PM',
-    price: '$300.000',
-    size: '2.100',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
+    price: '$300,000',
+    size: '2,100',
+    location: 'Garland, TX',
   },
   {
     media: 'https://assets.maccarianagency.com/backgrounds/img31.jpg',
     title: 'Loft design',
     time: '6:15 PM - 8:00 PM',
-    price: '$280.000',
-    size: '1.800',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
+    price: '$280,000',
+    size: '1,800',
+    location: 'McKinney, TX',
   },
   {
     media: 'https://assets.maccarianagency.com/backgrounds/img32.jpg',
     title: 'Vacation house',
     time: '6:15 PM - 8:00 PM',
-    price: '$340.000',
-    size: '2.600',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
+    price: '$340,000',
+    size: '2,600',
+    location: 'Fate, TX',
   },
 ];
 
@@ -79,7 +79,7 @@ const FeaturedProperties = (): JSX.Element => {
           color={'secondary'}
           align={'center'}
         >
-          Featured Properties
+          Featured Homes
         </Typography>
         <Typography
           variant="h4"
@@ -90,7 +90,9 @@ const FeaturedProperties = (): JSX.Element => {
             fontWeight: 700,
           }}
         >
-          Better way to find a property
+          Explore handpicked properties throughout the Dallas-Fort Worth area,
+          ranging from charming starter homes to luxurious estates—all expertly
+          curated by MoveAround.
         </Typography>
         <Typography
           variant="h6"
@@ -98,10 +100,10 @@ const FeaturedProperties = (): JSX.Element => {
           color={'text.secondary'}
           data-aos={'fade-up'}
         >
-          Find vacation rentals, cabins, beach houses, unique homes and
-          experiences
+          Ranging from charming starter homes to luxurious estates—all expertly
+          curated by MoveAround.
           <br />
-          around the world - all made possible by hosts on our website
+          So why not just MoveAround?
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -279,7 +281,7 @@ const FeaturedProperties = (): JSX.Element => {
               size="large"
               fullWidth={isMd ? false : true}
             >
-              Book a space
+              Find an agent
             </Button>
             <Box
               component={Button}

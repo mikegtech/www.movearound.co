@@ -13,23 +13,23 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 const mock = [
   {
     feedback:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "MoveAround made our home-buying experience seamless. Our agent truly understood our family's needs and found us the perfect home quickly. Highly recommended!",
     name: 'Clara Bertoletti',
-    title: 'MUI lover',
+    title: 'First-Time Homebuyer',
     avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
   },
   {
     feedback:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    name: 'Jhon Anderson',
-    title: 'Senior Frontend Developer',
+      "Selling our home was stress-free thanks to MoveAround. Their market knowledge and negotiation skills got us an excellent deal. We couldn't be happier!",
+    name: 'Mark Peterson',
+    title: 'Happy Seller',
     avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
   },
   {
     feedback:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
+      'We relocated from out-of-state, and MoveAround helped us find not just a house but a neighborhood we love. Fantastic service and genuinely caring people!',
+    name: 'Chris Lee',
+    title: 'Relocation Client',
     avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
   },
 ];
@@ -96,13 +96,12 @@ const Reviews = (): JSX.Element => {
               marginTop: theme.spacing(1),
             }}
           >
-            Rated 5 out of 5 stars by our customers!
+            Rated 5 out of 5 stars by our clients!
           </Typography>
           <Typography variant="h6" align={'center'} color={'text.secondary'}>
-            Companies from across the globe have had fantastic experiences using
-            theFront.
+            Homebuyers and sellers across Dallas-Fort Worth love MoveAround.
             <br />
-            Here’s what they have to say.
+            Here's what they're saying:
           </Typography>
         </Box>
         <Box
@@ -111,9 +110,10 @@ const Reviews = (): JSX.Element => {
             '& .slick-slide img': {
               objectFit: 'cover',
             },
-            '& .slick-list, & .slick-slider, & .slick-track, & .slick-slide > div': {
-              height: { xs: 'auto', md: 1 },
-            },
+            '& .slick-list, & .slick-slider, & .slick-track, & .slick-slide > div':
+              {
+                height: { xs: 'auto', md: 1 },
+              },
             '& .slick-prev, & .slick-next': {
               zIndex: 2,
               bottom: 0,

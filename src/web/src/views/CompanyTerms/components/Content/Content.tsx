@@ -4,45 +4,83 @@ import Typography from '@mui/material/Typography';
 
 const mock = [
   {
-    title: '1. What information do we collect?',
+    title: 'How and Why We Use Your Information (Legal Basis for Processing)',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      "We use the information we collect for specific, stated purposes, and we only process your data when we have a valid legal basis to do so. The principle of 'purpose limitation' is central to our data handling practices, ensuring that your data is used in ways that are necessary and transparent. Our legal bases for processing include performing our contractual duties to you, our legitimate business interests, compliance with legal obligations, and your consent.",
   },
   {
-    title: '2. How do we use your information?',
     description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
+      '• To Provide, Maintain, and Personalize Our Services (Performance of a Contract): We use your information to operate our platform. This includes creating and managing your account, displaying MLS listings, and personalizing your experience by providing tailored property recommendations and saved search results based on your activity and preferences.',
   },
   {
-    title: '3. Will your information be shared with anyone?',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?',
+      '• To Communicate with You (Legitimate Interest / Performance of a Contract): We use your contact information to send you administrative messages, such as updates to our terms, security alerts, and other essential service-related information. We also use it to respond to your customer support requests and other inquiries. With your consent where required, we may also send you marketing and promotional communications, which you can opt out of at any time.',
   },
   {
-    title: '4. Do we use cookies or other tracking technologies?',
     description:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat',
+      '• For Security, Safety, and Fraud Prevention (Legitimate Interest / Legal Obligation): Protecting our users and our platform is a top priority. We use account information, usage data, and other signals to monitor for and prevent fraudulent or illegal activity, verify user identities, and protect the security of your account.',
   },
   {
-    title: '5. Is your information transferred internationally?',
     description:
-      'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.',
+      "• For Analytics and Service Improvement (Legitimate Interest): We analyze usage trends and user behavior to understand how our Services are used. This allows us to troubleshoot issues, improve our platform's functionality, and develop new features and services that better meet the needs of our users.",
   },
   {
-    title: '6. How long do we keep your information?',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      '• To Comply with Legal and Regulatory Obligations (Legal Obligation): We may process your information to comply with applicable laws, lawful requests, and legal processes, such as responding to subpoenas or requests from government authorities. This also includes enforcing our Terms of Service and complying with MLS display rules and reporting obligations.',
   },
   {
-    title: '7. What are your privacy rights?',
+    title: 'Sharing and Disclosure of Information',
     description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
+      'We do not sell your personal information in the traditional sense. However, we may share or disclose your information with certain third parties under specific circumstances, as detailed below. We are committed to transparency regarding these practices.',
   },
   {
-    title:
-      '8. How can you review, update or delete the data we collect from you?',
     description:
-      'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?',
+      '• With MLS Providers and Participants: To facilitate real estate transactions, information related to your interactions with a listing may be shared with the relevant MLS and its members.',
+  },
+  {
+    description:
+      "• With Service Providers and Vendors: We engage third-party companies and individuals to perform services on our behalf ('Service Providers'). These include providers of cloud hosting, data analytics, customer support software, and payment processing services. These Service Providers are contractually obligated to maintain the confidentiality of the information.",
+  },
+  {
+    description:
+      '• With Real Estate Professionals: When you explicitly request to be connected with a real estate professional through our platform, we will share necessary contact details.',
+  },
+  {
+    description:
+      '• For Legal Reasons and to Protect Our Rights: We may disclose your information to comply with legal obligations, protect rights and safety, and address fraud or security issues.',
+  },
+  {
+    description:
+      '• In Connection with a Business Transaction: Information may be transferred as part of mergers or acquisitions. We will notify you of any such changes.',
+  },
+  {
+    description:
+      '• With Your Consent: We may share your information for other purposes with your explicit consent.',
+  },
+  {
+    title: 'Your Data Protection Rights and Choices',
+    description:
+      'You have certain rights regarding the personal information we hold about you, including the rights to access, delete, correct, opt-out of sale or sharing, and non-discrimination. To exercise these rights, please submit a request via email (privacy@movearound.co), phone, or our web form. We will verify your identity before processing your request.',
+  },
+  {
+    title: 'Cookies, Tracking Technologies, and Analytics',
+    description:
+      "Our Services use cookies and similar technologies for functionality, performance, analytics, and advertising. You can manage cookies through browser settings or our cookie consent tool. We use Google Analytics; opt-out via their browser add-on. We do not currently respond to 'Do Not Track' signals due to lack of standards.",
+  },
+  {
+    title: 'Data Security and Retention',
+    description:
+      'We maintain security measures like encryption and access controls to protect your data. We retain personal information as necessary for service provision, legal compliance, or legitimate business purposes. Data is securely deleted or anonymized when no longer needed.',
+  },
+  {
+    title: 'Specific Legal Disclosures',
+    description:
+      'Our Services are not for children under 16. Data may be transferred internationally. We are not responsible for third-party sites linked from our services.',
+  },
+  {
+    title: 'Contact Information for Privacy Inquiries',
+    description:
+      'Contact us with privacy concerns via email (privacy@movearound.co), mail, or phone. You may lodge a complaint with a supervisory authority if unsatisfied.',
   },
 ];
 

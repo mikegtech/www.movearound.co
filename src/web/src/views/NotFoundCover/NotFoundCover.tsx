@@ -8,6 +8,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+import config from '/src/config/movearound.json';
 
 const NotFoundCover = (): JSX.Element => {
   const theme = useTheme();
@@ -55,7 +56,10 @@ const NotFoundCover = (): JSX.Element => {
                     Oops! Looks like you followed a bad link.
                     <br />
                     If you think this is a problem with us, please{' '}
-                    <Link href={''} underline="none">
+                    <Link
+                      href={`mailto:${config.privacy_email}`}
+                      underline="none"
+                    >
                       tell us
                     </Link>
                   </Typography>

@@ -32,21 +32,21 @@ const Teaser = (): JSX.Element => {
               gutterBottom
               color={'secondary'}
             >
-              Flexible options
+              Your next home awaits. Are you ready to MoveAround?
             </Typography>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Don't worry about{' '}
+              Discover a variety of{' '}
               <Typography color="primary" variant="inherit" component="span">
-                pricing
+                listings
               </Typography>
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Three products that can be used independently or combined together
-              for your company’s needs.
+              Whether you're buying, selling, or just exploring your options,
+              MoveAround connects you with the perfect home effortlessly.
               <br />
-              Don't listen to what they say go and see.
+              Carefully chosen to match your lifestyle.
               <br />
-              Join the biggest community of people.
+              We are here to help you find your dream home in Dallas-Fort Worth.
             </Typography>
           </Box>
         </Grid>

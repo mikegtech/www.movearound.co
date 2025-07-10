@@ -18,7 +18,7 @@ const Search = (): JSX.Element => {
             fontWeight: 700,
           }}
         >
-          What is your real need?
+          What's Your Real Estate Goal?
         </Typography>
         <Typography
           variant="h6"
@@ -26,11 +26,11 @@ const Search = (): JSX.Element => {
           align={'center'}
           data-aos={'fade-up'}
         >
-          After 3 days all of your offers will arrive and you will have another
-          7 days to select your new company.
+          Discover the best homes tailored to your needs, from luxury listings
+          to affordable living spaces.
           <br />
-          We make sure to include all the amenities and niceties that a growing
-          startup could possibly need.
+          With MoveAround, finding your dream home in Dallas-Fort Worth is
+          simple, quick, and personalized.
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -50,13 +50,16 @@ const Search = (): JSX.Element => {
             >
               <Box>
                 <Typography fontWeight={700} variant={'h6'} gutterBottom>
-                  I share a room
+                  Buying a Home
                 </Typography>
-                <Typography>Over 20,000 users searching a place</Typography>
+                <Typography>
+                  Over 20,000 active property seekers finding their perfect
+                  home.
+                </Typography>
               </Box>
               <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
                 <Button variant="contained" size="large" color={'secondary'}>
-                  Search
+                  Find Homes
                 </Button>
               </Box>
             </Box>
@@ -78,13 +81,16 @@ const Search = (): JSX.Element => {
             >
               <Box>
                 <Typography fontWeight={700} variant={'h6'} gutterBottom>
-                  I need a place
+                  Selling a Home
                 </Typography>
-                <Typography>Over 20,000 users searching a place</Typography>
+                <Typography>
+                  Over 20,000 homeowners connecting with trusted real estate
+                  experts.
+                </Typography>
               </Box>
               <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
                 <Button variant="contained" color="primary" size="large">
-                  Search
+                  Get Started
                 </Button>
               </Box>
             </Box>

@@ -3,6 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
+import config from '/src/config/movearound.json';
 
 const ContactCard = (): JSX.Element => {
   const theme = useTheme();
@@ -33,13 +34,8 @@ const ContactCard = (): JSX.Element => {
           contact us.
         </Typography>
         <Typography variant={'subtitle2'}>
-          hi@maccarianagency.com
+          {config.privacy_email}
           <br />
-          via Gola 4
-          <br />
-          Milan, Milano 20143
-          <br />
-          Italy
         </Typography>
       </Box>
     </Box>

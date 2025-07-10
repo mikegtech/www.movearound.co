@@ -161,7 +161,7 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
         </Link>
         <Link
           component={Button}
-          href={'#'}
+          href={'/sign-in'}
           size={'large'}
           variant={'body1'}
           underline={'none'}

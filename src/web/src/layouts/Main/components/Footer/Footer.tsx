@@ -29,9 +29,11 @@ const Footer = (): React.ReactElement => {
           >
             <Box
               component={'img'}
-              src="/logo.png"
-              height={1}
-              width={1}
+              src="/logo-light.png"
+              sx={{
+                height: '100px',
+                width: '550px',
+              }}
               alt="MoveAround.co Logo"
             />
           </Box>
@@ -47,28 +49,16 @@ const Footer = (): React.ReactElement => {
                 Home
               </Link>
             </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="https://thefront.maccarianagency.com/docs/introduction"
-                target={'blank'}
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Documentation
-              </Link>
-            </Box>
             <Box marginTop={1}>
               <Button
                 variant="outlined"
                 color="primary"
                 component="a"
                 target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
+                href="/sign-in"
                 size="small"
               >
-                Purchase now
+                Sign In
               </Button>
             </Box>
           </Box>
@@ -81,7 +71,7 @@ const Footer = (): React.ReactElement => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; M3Gatewood Consulting, Inc. 2025, All rights reserved
         </Typography>
         <Typography
           align={'center'}
@@ -93,6 +83,30 @@ const Footer = (): React.ReactElement => {
           our authorised service providers may use cookies for storing
           information to help provide you with a better, faster and safer
           experience and for marketing purposes.
+        </Typography>
+        <Typography
+          align={'center'}
+          variant={'caption'}
+          color="text.secondary"
+          component={'p'}
+          sx={{ mt: 1 }}
+        >
+          <a
+            href="/sitemap"
+            style={{
+              color: 'inherit',
+              textDecoration: 'none',
+              marginRight: 16,
+            }}
+          >
+            Sitemap
+          </a>
+          <a
+            href="/company-terms"
+            style={{ color: 'inherit', textDecoration: 'none' }}
+          >
+            Privacy Policy
+          </a>
         </Typography>
       </Grid>
     </Grid>

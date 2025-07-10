@@ -55,7 +55,7 @@ const Places = (): JSX.Element => {
           color={'secondary'}
           align={'center'}
         >
-          Places
+          NEIGHBORHOODS
         </Typography>
         <Typography
           variant="h4"
@@ -66,7 +66,7 @@ const Places = (): JSX.Element => {
             fontWeight: 700,
           }}
         >
-          Find more places
+          Explore More Communities
         </Typography>
         <Typography
           variant="h6"
@@ -74,23 +74,18 @@ const Places = (): JSX.Element => {
           color={'text.secondary'}
           data-aos={'fade-up'}
         >
-          For entrepreneurs, startups and freelancers.
-          <br />
-          Discover coworking spaces designed to inspire and to connect you to a
-          community of motivated people.
+          Discover vibrant neighborhoods across the Dallas-Fort Worth area. Find
+          communities that match your lifestyle, connect with great local
+          amenities, and make your next move your best one yet.
         </Typography>
-        <Box
-          display="flex"
-          justifyContent={'center'}
-          marginTop={2}
-        >
+        <Box display="flex" justifyContent={'center'} marginTop={2}>
           <Button
             variant="contained"
             color="primary"
             size="large"
             fullWidth={isMd ? false : true}
           >
-            Book a space
+            Explore Neighborhoods
           </Button>
         </Box>
       </Box>

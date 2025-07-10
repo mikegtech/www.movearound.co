@@ -6,24 +6,24 @@ import ListItemText from '@mui/material/ListItemText';
 
 const mock = [
   {
-    title: 'Coworking communities',
+    title: 'Local Insights',
     subtitle:
-      'Connect in spaces designed to bring incredible people together. Learn with them and take your project to new heights.',
+      'Get detailed knowledge about neighborhoods and communities, empowering your next move.',
   },
   {
-    title: 'Flexible contracts',
+    title: 'Home Valuations',
     subtitle:
-      'Stay as little as 3 months with rolling contracts. Like it here? This is your space, so stay as long as you want.',
+      "Discover your home's current market value and receive expert recommendations.",
   },
   {
-    title: 'All inclusive',
+    title: 'Personalized Listings',
     subtitle:
-      'Monthly fee covers everything you need hassle free. Keep cool and focus on what matters to you.',
+      'Find homes tailored precisely to your lifestyle, preferences, and budget.',
   },
   {
-    title: 'Hospitality service',
+    title: 'Dedicated Support',
     subtitle:
-      '24/7 support. No more hidden prices. It is your workingplace, playground, relax room.',
+      'Enjoy professional guidance and assistance every step of the home buying or selling journey.',
   },
 ];
 

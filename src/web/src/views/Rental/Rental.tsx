@@ -45,9 +45,6 @@ const Rental = (): JSX.Element => {
           <Reviews />
         </Container>
       </Box>
-      <Container>
-        <Partners />
-      </Container>
       <Box bgcolor={'alternate.main'}>
         <Container>
           <Advantages />

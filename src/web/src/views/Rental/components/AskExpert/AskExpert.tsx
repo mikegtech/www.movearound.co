@@ -33,9 +33,9 @@ const mock = [
         />
       </svg>
     ),
-    title: 'Sign Up',
+    title: 'Connect with an Agent',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Speak directly with a local expert and receive personalized guidance tailored to your needs.',
   },
   {
     icon: (
@@ -55,9 +55,9 @@ const mock = [
         />
       </svg>
     ),
-    title: 'Create Events',
+    title: 'Schedule a Consultation',
     subtitle:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Book a convenient time for a no-obligation meeting with our real estate professionals.',
   },
 ];
 
@@ -76,10 +76,11 @@ const AskExpert = (): JSX.Element => {
               Ask an expert
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Lorem ipsum dolor sit amet,
+              Got Questions? We've Got Answers!
               <br />
-              consectetur adipiscing elit. Id ultricies sed ultricies fringilla
-              commodo.
+              Our local real estate specialists are here to help guide your next
+              move. Get personalized advice and market insights to simplify your
+              journey.
             </Typography>
           </Box>
           <List

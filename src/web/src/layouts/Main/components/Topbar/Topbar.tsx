@@ -113,7 +113,7 @@ const Topbar = ({
             color="primary"
             component="a"
             target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="/sign-in"
             size="large"
             sx={{ whiteSpace: 'nowrap' }}
           >

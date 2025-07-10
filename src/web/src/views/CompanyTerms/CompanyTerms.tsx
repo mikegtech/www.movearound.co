@@ -33,7 +33,7 @@ const CompanyTerms = (): JSX.Element => {
                   color: theme.palette.common.white,
                 }}
               >
-                Last modified on <strong>23 Aug, 2021</strong>
+                Last modified on <strong>1 Jan, 2025</strong>
               </Typography>
             </Container>
             <Box

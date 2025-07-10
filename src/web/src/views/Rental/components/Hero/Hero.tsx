@@ -52,7 +52,7 @@ const Hero = (): JSX.Element => {
                 color: 'common.white',
               }}
             >
-              Need help selecting a rental service provider?
+              The Smarter Way to Buy in DFW.
             </Typography>
             <Typography
               variant="h6"
@@ -63,9 +63,10 @@ const Hero = (): JSX.Element => {
                 color: 'common.white',
               }}
             >
-              Let us guide you home.
+              Get access to homes you won't find anywhere else, including our
+              exclusive off-market listings.
               <br />
-              Find the house of your dreams
+              Discover Your Next Home.
             </Typography>
           </Box>
           <Box
@@ -123,7 +124,7 @@ const Hero = (): JSX.Element => {
                     size="medium"
                     fullWidth
                   >
-                    Get srated
+                    Search
                   </Button>
                 </Box>
               </Box>
@@ -133,10 +134,10 @@ const Hero = (): JSX.Element => {
             </Box>
             <Box>
               <Typography component="p" variant="body2" align="left">
-                By clicking on "Get Started" you agree to our{' '}
+                By clicking on "Search" you agree to our{' '}
                 <Box
                   component="a"
-                  href=""
+                  href="/company-terms"
                   color={theme.palette.text.primary}
                   fontWeight={'700'}
                 >
@@ -145,7 +146,7 @@ const Hero = (): JSX.Element => {
                 ,{' '}
                 <Box
                   component="a"
-                  href=""
+                  href="/company-terms"
                   color={theme.palette.text.primary}
                   fontWeight={'700'}
                 >
@@ -154,7 +155,7 @@ const Hero = (): JSX.Element => {
                 and{' '}
                 <Box
                   component="a"
-                  href=""
+                  href="/company-terms"
                   color={theme.palette.text.primary}
                   fontWeight={'700'}
                 >
