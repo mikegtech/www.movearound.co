@@ -52,10 +52,16 @@ const Topbar = ({
       >
         <Box
           component={'img'}
-          src="/logo.png"
-          height={1}
-          width={1}
+          src={
+            mode === 'light' && !colorInvert
+              ? '/logo-light.png'  // Your 600x200 light mode logo
+              : '/logo-dark.png'   // Your 600x200 dark mode logo
+          }
           alt="MoveAround.co Logo"
+          sx={{
+            height: '100px',
+            width: '550px',
+          }}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
