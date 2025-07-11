@@ -55,7 +55,7 @@ const Footer = (): React.ReactElement => {
                 color="primary"
                 component="a"
                 target="blank"
-                href="/sign-in"
+                href="/signin-cover"
                 size="small"
               >
                 Sign In

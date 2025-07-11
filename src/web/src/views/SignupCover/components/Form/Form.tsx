@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { Checkbox, FormControlLabel } from '@mui/material';
 
 const validationSchema = yup.object({
   firstName: yup
@@ -27,6 +28,14 @@ const validationSchema = yup.object({
     .trim()
     .email('Please enter a valid email address')
     .required('Email is required.'),
+  mobile: yup
+    .string()
+    .trim()
+    .matches(
+      /^\+1[2-9]\d{2}[2-9]\d{2}\d{4}$/,
+      'Please enter a valid U.S. mobile number in E.164 format (+1XXXXXXXXXX)',
+    )
+    .optional(),
   password: yup
     .string()
     .required('Please specify your password')
@@ -37,6 +46,7 @@ const Form = (): JSX.Element => {
   const initialValues = {
     firstName: '',
     lastName: '',
+    mobile: '',
     email: '',
     password: '',
   };
@@ -128,6 +138,44 @@ const Form = (): JSX.Element => {
               helperText={formik.touched.email && formik.errors.email}
             />
           </Grid>
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Enter your mobile number
+            </Typography>
+            <TextField
+              label="Mobile number"
+              variant="outlined"
+              name={'mobile'}
+              fullWidth
+              value={formik.values.mobile}
+              onChange={formik.handleChange}
+              error={formik.touched.mobile && Boolean(formik.errors.mobile)}
+              // @ts-ignore
+              helperText={formik.touched.mobile && formik.errors.mobile}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <Box display="flex" alignItems="flex-start">
+              <Checkbox
+                name="smsConsent"
+                checked={formik.values.smsConsent}
+                onChange={formik.handleChange}
+                color="primary"
+              />
+
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                I agree to receive SMS alerts from MoveAround DFW. Message and
+                data rates may apply. Reply STOP to opt-out; reply HELP for
+                help. See our privacy policy below .
+              </Typography>
+            </Box>
+            {formik.touched.smsConsent && formik.errors.smsConsent && (
+              <Typography variant="caption" color="error">
+                {formik.errors.smsConsent}
+              </Typography>
+            )}
+          </Grid>
+
           <Grid item xs={12}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
               Enter your password

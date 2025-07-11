@@ -151,7 +151,7 @@ const Sidebar = ({ open, variant, onClose }: Props): JSX.Element => {
           </Link>
           <Link
             component={Button}
-            href={'#'}
+            href={'/signin-cover'}
             size={'large'}
             variant={'body1'}
             underline={'none'}
