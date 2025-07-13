@@ -1,0 +1,36 @@
+version: '3'
+dotenv: [.env]
+
+vars:
+  PACKAGE_IMPORT_NAME: movearound_components
+  PYTHON_VERSION: 3.12
+
+tasks:
+  build-transcript:
+    desc: Build the transcript videos package
+    cmds:
+      - docker compose build
+
+  start-movearound:
+    desc: Start the movearound package
+    cmds:
+      - docker compose up --build -d
+
+  stop-movearound:
+    desc: Stop the movearound package
+    cmds:
+      - docker compose down
+
+  destroy-movearound:
+    desc: Destroy the movearound package
+    cmds:
+      - docker compose down
+      - docker system prune --force
+      
+  movearound-status:
+    desc: Check the status of the movearound package
+    cmds:
+      - docker ps
+      - docker compose logs -f traefik
+      - docker compose logs -f app
+
