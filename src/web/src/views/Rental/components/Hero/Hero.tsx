@@ -11,7 +11,9 @@ import InputAdornment from '@mui/material/InputAdornment';
 
 import Container from 'components/Container';
 
-const Hero = (): JSX.Element => {
+import dallasBackground from '@/assets/images/background/dallas_window.jpeg?width=1920&format=webp&as=src';
+
+const Hero = (): React.ReactElement => {
   const theme = useTheme();
 
   return (
@@ -21,8 +23,7 @@ const Hero = (): JSX.Element => {
       position={'relative'}
       sx={{
         backgroundColor: theme.palette.alternate.main,
-        background:
-          'url(https://assets.maccarianagency.com/backgrounds/img26.jpg) no-repeat center',
+        background: `url(${dallasBackground}) no-repeat center`,
         backgroundSize: 'cover',
         marginTop: -13,
         paddingTop: 13,

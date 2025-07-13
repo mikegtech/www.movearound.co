@@ -1,15 +1,17 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { imagetools } from 'vite-imagetools';
 
-const path = require('path');
+import path from 'path';
 
 export default defineConfig({
-  plugins: [react(),],
+  plugins: [imagetools(), react()],
   server: {
     port: 3000, // Use the same port as CRA (optional)
   },
   resolve: {
     alias: {
+      '@': path.resolve(__dirname, 'src'),
       src: path.resolve('/src/'),
       blocks: "/src/blocks",
       components: "/src/components",

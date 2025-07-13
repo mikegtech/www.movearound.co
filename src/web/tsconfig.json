@@ -19,11 +19,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vite/client"] // Include types for Vite
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+
   "exclude": [
     "node_modules"
   ]
