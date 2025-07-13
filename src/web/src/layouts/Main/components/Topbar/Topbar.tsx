@@ -112,7 +112,6 @@ const Topbar = ({
             variant="contained"
             color="primary"
             component="a"
-            target="blank"
             href="/signin-cover"
             size="large"
             sx={{ whiteSpace: 'nowrap' }}

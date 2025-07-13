@@ -41,7 +41,7 @@ const SidebarNav = ({ pages }: Props): React.ReactElement => {
         >
           <Box
             component={'img'}
-            src="/logo.png"
+            src="/logo-light.png"
             height={1}
             width={1}
             alt="MoveAround.co Logo"
@@ -50,34 +50,22 @@ const SidebarNav = ({ pages }: Props): React.ReactElement => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Landings'} items={landingPages} />
+          <NavItem title={'Listings'} items={landingPages} />
         </Box>
         <Box>
-          <NavItem title={'Company'} items={companyPages} />
+          <NavItem title={'Communities'} items={companyPages} />
         </Box>
         <Box>
-          <NavItem title={'Pages'} items={secondaryPages} />
+          <NavItem title={'Buyers'} items={secondaryPages} />
         </Box>
         <Box>
           <NavItem title={'Account'} items={accountPages} />
         </Box>
         <Box>
-          <NavItem title={'Blog'} items={blogPages} />
+          <NavItem title={'Sellers'} items={blogPages} />
         </Box>
         <Box>
-          <NavItem title={'Portfolio'} items={portfolioPages} />
-        </Box>
-        <Box marginTop={2}>
-          <Button
-            size={'large'}
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="https://thefront.maccarianagency.com/docs/introduction"
-            target={'blank'}
-          >
-            Documentation
-          </Button>
+          <NavItem title={'More Info'} items={portfolioPages} />
         </Box>
         <Box marginTop={1}>
           <Button
@@ -86,10 +74,9 @@ const SidebarNav = ({ pages }: Props): React.ReactElement => {
             color="primary"
             fullWidth
             component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="/signin-cover"
           >
-            Purchase now
+            Sign In
           </Button>
         </Box>
       </Box>
